@@ -16,6 +16,7 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTube
 
 public class Youtube_Video_Embedded extends AppCompatActivity {
 
+    String s ;
     private YouTubePlayerView youTubePlayerView ;
 
     @Override
