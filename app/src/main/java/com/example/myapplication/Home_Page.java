@@ -11,7 +11,7 @@ public class Home_Page extends AppCompatActivity {
 
 
 
-    Button profile , rating , video ;
+    Button profile , rating , video , Post  ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +19,7 @@ public class Home_Page extends AppCompatActivity {
         profile = findViewById(R.id.Profile) ;
         rating = findViewById(R.id.Rating)  ;
         video = findViewById(R.id.Video) ;
+        Post = findViewById(R.id.post) ;
 
         rating.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +38,13 @@ public class Home_Page extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Home_Page.this, Youtube_Video_Embedded.class));
+            }
+        });
+
+        Post.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Home_Page.this, Post_Page.class));
             }
         });
     }

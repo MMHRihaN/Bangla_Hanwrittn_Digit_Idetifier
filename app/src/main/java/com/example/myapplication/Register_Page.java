@@ -354,7 +354,7 @@ public class Register_Page extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     if (snapshot.exists()) {
                         editTextUsername.setError("Username already exist");
-                        Toast.makeText(Register_Page.this,"LOL LOL  ", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(Register_Page.this,"LOL LOL  ", Toast.LENGTH_LONG).show();
                         all_ok ++ ;
                     } else {
                         editTextUsername.setError(null);

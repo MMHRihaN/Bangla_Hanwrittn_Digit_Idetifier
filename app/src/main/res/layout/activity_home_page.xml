@@ -33,5 +33,13 @@
         android:layout_centerInParent="true"
         android:text="Video" />
 
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Video"
+        android:layout_centerInParent="true"
+        android:text="BLOG" />
+
 
 </RelativeLayout>
